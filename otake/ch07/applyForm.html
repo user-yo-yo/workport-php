@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>受講申し込みページ</title>
+</head>
+<body>
+<a> 【みんスク受講申し込みページ】 </a>
+<br>
+<br>
+
+<form action="receipt.php" method="post">
+<table>
+	<tr>
+		<th bgcolor="#66CCFF" align="left">お名前：</th>
+		<td><input type="text" name="onamae" value=""></td>
+	</tr>
+	<tr>
+		<th bgcolor="#66CCFF" align="left">電話番号：</th>
+		<td><input type="text" name="denwa" value=""></td>
+	</tr>
+	<tr>
+		<th bgcolor="#66CCFF" align="left">受講開始希望日：</th>
+		<td><select name="hiduke">
+			<option value="1">2/1</option>
+			<option value="2">3/1</option>
+			<option value="3">4/1</option>
+		</select></td>
+	</tr>
+	<tr>
+		<th bgcolor="#66CCFF" align="left">希望講座</th>
+		<td><input type="radio" name="kouza" value="0" checked>PHP入門講座 <input
+			type="radio" name="kouza" value="1">PHP基礎講座</td>
+	</tr>
+	<tr>
+		<th bgcolor="#66CCFF" align="left">当スクールをお知りになったきっかけ<br>
+		きっかけ:(複数回答可)</th>
+		<td><input type="checkbox" name="kikkake[]" value="1">当スクールのWebページ <input
+			type="checkbox" name="kikkake[]" value="2">ロコミ <input type="checkbox"
+			name="kikkake[]" value="3">検索サイト<br>
+		<input type="checkbox" name="kikkake[]" value="4">知人からの紹介 <input
+			type="checkbox" name="kikkake[]" value="5">雑誌 <input type="checkbox"
+			name="kikkake[]" value="6">その他</td>
+	</tr>
+	<tr>
+		<th bgcolor="#66CCFF" align="left">備考:</th>
+		<td><textarea name="bikou" rows="3" cols="45"></textarea></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center"><input type="submit" name="okuru"
+			value="申し込む"> <input type="reset" name="torikesi" value="入力取り消し"></td>
+	</tr>
+</table>
+<input type="hidden" name="kakusi" value="2012"></form>
+</body>
+</html>
